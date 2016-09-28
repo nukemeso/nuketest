@@ -1,10 +1,3 @@
-function kstgOP(){
-$(".kuso_tg").fadeIn("slow")
-}
-function SKOP(){
-$(".SK_tg").fadeIn("slow")
-}
-
 function tec(){
 alert("Hello World!")
 }
@@ -14,16 +7,18 @@ alert("Hello World!")
 
 jQuery(document).ready(setReady);
 function setReady() {
-jQuery('.kuso').click(se);
+jQuery('.kuso').click(plf);
 jQuery('.SK').click(sko);
 }
 	
-function se(){
+function plf(){
+$(".kuso_tg").slideToggle()
+$(".nk").not(".kuso_tg").hide("slow");
 
-$(".kuso_tg").slideToggle();
 
 }
 
 function sko(){
 $(".SK_tg").slideToggle();
+$(".nk").not(".SK_tg").hide("slow");
 }	
